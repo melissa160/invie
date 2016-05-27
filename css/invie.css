@@ -125,7 +125,8 @@ input:focus, textarea:focus{
 }
 
 .menu li:before{
-  content: '•';
+  content: '-';
+  /*content: '•';*/
   font-size: 20px;
   line-height: 20px;
 }
