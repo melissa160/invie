@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invie - Guitarras!</title>
+  <link rel="stylesheet" href="css/invie.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'> <!-- cdn-recurso que no es propio pero lo vamos a tomar -->
+</head>
+<body>
+  <section class="portada background"> <!-- portada -->
+  <header id="header" class="header contenedor"><!-- header -->
+    <figure class="logotipo"> <!-- logotipo -->
+      <img src="img/invie.png" width="186" height="60" alt="Invie logotipo">
+    </figure>
+    <nav class="menu"> <!-- menu -->
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#guitarras">Guitarras</a>
+        </li>
+        <li>
+          <a href="precios.html">Precios</a>
+        </li>
+      </ul>
+    </nav> 
+  </header>
+    <div class="contenedor">
+      <h1>Guitarras <span>Invie</span>sibles</h1> <!-- titulo -->
+      <h3 class="title-a">Se la estrella de rock que siempre quisiste ser </h3><!-- resumen -->
+      <a class="button" href="#guitarras">Ver mas</a><!-- boton -->
+    </div>
+  </section><!-- tipos guitarras -->
+  <section id="guitarras" class="guitarras contenedor">  
+    <h2>Nuestras guitarras</h2><!-- titulo <-->                     
+    <article class="guitarra "><!-- guitarra1 -->
+      <img class="derecho" src="img/invie-acustica.png" width="350" alt="Guitarra acustica">
+      <div class="contenedor-guitarra-a">
+        <h3 class="title-b">Invie acustica</h3>
+        <ol>
+          <li>Estilo Vintage</li>
+          <li>Madera Pura</li>
+          <li>Estuche invisible de aluminio</li>
+        </ol>
+      </div>
+    </article>
+    <article class="guitarra "><!-- guitarra2 -->
+      <img  class="izquierdo" src="img/invie-classic.png" width="350" alt="Guitarra clasica">
+      <div class="contenedor-guitarra-b">
+      <h3 class="title-b">Invie Classic</h3>
+        <ol>
+          <li>Estilo Vintage</li>
+          <li>Liviana</li>
+          <li>Inicia tu camino como rockstart</li>
+        </ol>
+      </div>
+    </article>
+  </section>
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="contacto">
+          <img src="img/invie-white.png" alt="invie">
+          <a href="tel:+573143037742"><strong>Telefono</strong> <span>3143037742</span></a>
+          <a href="mailto:melissa160@gmail.com"><strong>E-mail</strong><span>melissa160@gmail.com</span></a>
+      </div>
+      <form class="formulario">
+        <div class="col1">
+          <label for="nombre">Nombre</label> <!-- cada vez que se de click en el label nombre pone el foco del mouse en el campo de texto para que digite el nombre --> 
+          <input type="text" required id="nombre" name="nombre" />
+          <label for="email">E-mail</label> <!-- cada vez que se de click en el label nombre pone el foco del mouse en el campo de texto para que digite el nombre --> 
+          <input type="email" required id="email" name="email" />
+          <div class="sexo">
+            <label for="mujer">
+              <input type="radio" checked id="mujer" name="sexo" value="mujer">Mujer <!-- Value es el valor que finalmente se envia al servidor. con name en hombre y mujer indico que solo puedo seleccionar uno de los dos   --> <!-- se da predefinido este campo con checked -->
+            </label>
+            <label for="hombre">
+              <input type="radio" id="hombre" name="sexo" value="hombre">Hombre <!-- Campo value es lo que finalmente se envia al servidor -->
+            </label>
+          </div> 
+          <div class="intereses">
+            <label for="Cotizacion">
+              <input type="checkbox"id="Cotizacion" value="cotizacion">Cotizacion
+            </label>
+            <label for="Reclamos">
+              <input type="checkbox"id="Reclamos" value="reclamos">Reclamos
+            </label>
+            <label for="Comentarios">
+              <input type="checkbox" checked id="Comentarios" value="comentarios">Comentarios <!-- se da predefinido este campo con checked -->
+            </label>
+            <label for="Otros">
+              <input type="checkbox"id="Otros" value="otros" >Otros
+            </label>
+          </div>  
+        </div>
+        <div class="col2">
+          <label for="comentarios">Comentarios</label>
+          <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+          <input type="submit" value="Enviar" class="button" /> <!-- para el boton el campo value es el texto que se mostrara en el boton -->
+        </div>      
+      </form>
+    </div>
+  </footer>
+</body> 
+</html>

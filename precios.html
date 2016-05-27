@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Precios - Guitarras!</title>
+  <link rel="stylesheet" href="css/invie.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'> <!-- cdn-recurso que no es propio pero lo vamos a tomar -->
+</head>
+<body>
+ <header id="header" class="header background"><!-- header -->
+  <div class="contenedor">
+    <figure class="logotipo"> <!-- logotipo -->
+      <img src="img/invie.png" width="186" height="60" alt="Invie logotipo">
+    </figure>
+    <nav class="menu"> <!-- menu -->
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="index.html#guitarras">Guitarras</a>
+        </li>
+        <li>
+          <a href="precios.html">Precios</a>
+        </li>
+      </ul>
+    </nav> 
+    
+  </div>
+  </header>
+
+  <section class="tabla"> 
+    <div class="contenedor">
+      <table>
+        <thead><!-- cabecera de la tabla -->
+          <tr><!-- row  o fila de la tabla en la cabecera -->
+            <th>Modelo</th><!-- hay dos tipos de celda en una tabla td >table division(celda normal) o th>celda para cabecera -->
+            <th>Precio</th><!-- hay dos tipos de celda en una tabla td >table division(celda normal) o th>celda para cabecera -->
+            <th>Descripcion</th><!-- hay dos tipos de celda en una tabla td >table division(celda normal) o th>celda para cabecera -->
+          </tr>
+        </thead>
+        <tbody><!-- cuerpo de la tabla -->
+          <tr><!-- row o fila de la tabla en el body -->
+            <td>Invie classic</td>
+            <td>$100.000</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptatibus provident nulla inventore mollitia praesentium aut delectus iste laudantium illum error debitis deleniti repellat perferendis atque, temporibus optio vero nesciunt.</td>
+          </tr>
+          <tr><!-- row o fila de la tabla en el body -->
+            <td>Invie classic</td>
+            <td>$100.000</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptatibus provident nulla inventore mollitia praesentium aut delectus iste laudantium illum error debitis deleniti repellat perferendis atque, temporibus optio vero nesciunt.</td>
+          </tr>
+          <tr><!-- row o fila de la tabla en el body -->
+            <td>Invie classic</td>
+            <td>$100.000</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptatibus provident nulla inventore mollitia praesentium aut delectus iste laudantium illum error debitis deleniti repellat perferendis atque, temporibus optio vero nesciunt.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+<footer class="footer">
+    <div class="contenedor">
+      <div class="contacto">
+          <img src="img/invie-white.png" alt="invie">
+          <a href="tel:+573143037742"><strong>Telefono</strong> <span>3143037742</span></a>
+          <a href="mailto:melissa160@gmail.com"><strong>E-mail</strong><span>melissa160@gmail.com</span></a>
+      </div>
+      <form class="formulario">
+        <div class="col1">
+          <label for="nombre">Nombre</label> <!-- cada vez que se de click en el label nombre pone el foco del mouse en el campo de texto para que digite el nombre --> 
+          <input type="text" required id="nombre" name="nombre" />
+          <label for="email">E-mail</label> <!-- cada vez que se de click en el label nombre pone el foco del mouse en el campo de texto para que digite el nombre --> 
+          <input type="email" required id="email" name="email" />
+          <div class="sexo">
+            <label for="mujer">
+              <input type="radio" checked id="mujer" name="sexo" value="mujer">Mujer <!-- Value es el valor que finalmente se envia al servidor. con name en hombre y mujer indico que solo puedo seleccionar uno de los dos   --> <!-- se da predefinido este campo con checked -->
+            </label>
+            <label for="hombre">
+              <input type="radio" id="hombre" name="sexo" value="hombre">Hombre <!-- Campo value es lo que finalmente se envia al servidor -->
+            </label>
+          </div> 
+          <div class="intereses">
+            <label for="Cotizacion">
+              <input type="checkbox"id="Cotizacion" value="cotizacion">Cotizacion
+            </label>
+            <label for="Reclamos">
+              <input type="checkbox"id="Reclamos" value="reclamos">Reclamos
+            </label>
+            <label for="Comentarios">
+              <input type="checkbox" checked id="Comentarios" value="comentarios">Comentarios <!-- se da predefinido este campo con checked -->
+            </label>
+            <label for="Otros">
+              <input type="checkbox"id="Otros" value="otros" >Otros
+            </label>
+          </div>  
+        </div>
+        <div class="col2">
+          <label for="comentarios">Comentarios</label>
+          <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+          <input type="submit" value="Enviar" class="button" /> <!-- para el boton el campo value es el texto que se mostrara en el boton -->
+        </div>      
+      </form>
+    </div>
+  </footer>
+  
+</body>
+</html>
